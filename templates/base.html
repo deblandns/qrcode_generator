@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+{% load render_partial %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}qr code generator{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "base-style.css" %}">
+    {% block static  %}{% endblock %}
+</head>
+<body>
+{% render_partial "qrcode_maker.views.navbar_components" %}
+{% block content %}
+
+{% endblock %}
+</body>
+</html>

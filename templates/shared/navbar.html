@@ -1,0 +1,57 @@
+<style>
+    /* Reset some default styles for the list and anchors */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    background-color: #2E4052; /* Change the background color to your preference */
+    padding: 20px;
+}
+
+/* Style for the navigation list */
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Style for individual navigation items */
+.nav-item {
+    font-size: 18px;
+    color: #FFF; /* Change the text color to your preference */
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Add a subtle hover effect */
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+/* Style for anchor links */
+.nav-item a {
+    color: inherit;
+}
+
+/* Add a border-bottom to the active link */
+.nav-item.active {
+    border-bottom: 2px solid #FF5733; /* Change the active link color */
+}
+
+</style>
+
+<nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="{% url "homepage" %}">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Services</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
