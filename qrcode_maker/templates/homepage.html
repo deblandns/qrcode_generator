@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load sorl_thumbnail %}
 {% load static %}
 {% block static %}
     <link rel="stylesheet" href="{% static "homepagestyle.css" %}">
@@ -7,5 +8,12 @@
     homepage
 {% endblock %}
 {% block content %}
-    <h1>سلام</h1>
+<div class="centered-form">
+    <form method="post" action="{% url "homepage" %}">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Submit</button>
+    </form>
+</div>
+    <img class="qrcode-image" src="{{ image.qrcode.url }}" alt="">
 {% endblock %}

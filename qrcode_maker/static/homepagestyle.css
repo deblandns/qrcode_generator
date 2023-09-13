@@ -1,0 +1,10 @@
+.centered-form {
+            text-align: center;
+            margin-top: 10%;
+        }
+.qrcode-image{
+    text-align: center;
+    display: flex;
+    margin-top: 3%;
+    margin-right: 6%;
+}
