@@ -1,0 +1,19 @@
+/* Styles for the big title */
+.big-title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    color: #333; /* Change the color to your preference */
+}
+
+/* Styles for the colorful link */
+.colorful-link {
+    text-decoration: none;
+    color: #FF5733; /* Change the color to your preference */
+    font-weight: bold;
+    transition: color 0.3s; /* Add a smooth color transition effect */
+}
+
+.colorful-link:hover {
+    color: #FFC300; /* Change the color on hover to your preference */
+}
