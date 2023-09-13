@@ -7,5 +7,12 @@
     homepage
 {% endblock %}
 {% block content %}
-    <h1>سلام</h1>
+<div class="centered-form">
+    <form method="post" action="{% url "homepage" %}">
+        {% csrf_token %}
+        {{ qrform }}
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
 {% endblock %}
