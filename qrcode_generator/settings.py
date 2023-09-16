@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_render_partial',
     'donate',
     'aboutus',
+    'contactus',
     'sorl.thumbnail',
 
 
