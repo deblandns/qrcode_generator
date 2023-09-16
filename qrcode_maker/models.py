@@ -7,6 +7,7 @@ from PIL import Image, ImageDraw
 
 
 class qrcodes(models.Model):
+    qrcode_id = models.AutoField(primary_key=True)
     text_input = models.CharField(max_length=500, verbose_name="ورودی متن", null=True, blank=True)
     qrcode = models.ImageField(upload_to="media/qrimages/", null=True, blank=True)
 
@@ -19,7 +20,7 @@ class qrcodes(models.Model):
 
     def save(self, *args, **kwargs):
         qrcode_img = qrcode.make(self.text_input)
-        canvas = Image.new("RGB", (1000,1000), "white")
+        canvas = Image.new("RGB", (1000, 1000), "white")
         draw = ImageDraw.Draw(canvas)
         canvas.paste(qrcode_img)
         file_name = f"qrcode{self.text_input}"+".png"

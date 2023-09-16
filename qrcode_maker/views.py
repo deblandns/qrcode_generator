@@ -21,7 +21,7 @@ class homepage(View):
         form = forms.qrcodes(request.POST)
         if form.is_valid():
             form.save()
-        image = models.qrcodes.objects.last()
+            image = models.qrcodes.objects.last()
         return render(request, "homepage.html", {"form": form, "image": image})
 
 

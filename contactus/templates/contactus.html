@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% block static %}
+    <link rel="stylesheet" href="{% static "style.css" %}">
+{% endblock %}
+{% block title%}
+ارتباط با ما
+{% endblock %}
+{% block content %}
+<h1 class="test">با ما در ارتباط باشید</h1>
+
+    <form class="custom-form" method="post" action="{% url 'contact-us' %}">
+        {% csrf_token %}
+
+        {{ contact_form.non_field_errors }}
+
+        <div class="custom-label">
+            {{ contact_form.fullname.label_tag }}
+        </div>
+        <div class="custom-input">
+            {{ contact_form.fullname }}
+        </div>
+
+        <div class="custom-label">
+            {{ contact_form.email.label_tag }}
+        </div>
+        <div class="custom-input">
+            {{ contact_form.email }}
+        </div>
+
+        <div class="custom-label">
+            {{ contact_form.message.label_tag }}
+        </div>
+        <div class="custom-input">
+            {{ contact_form.message }}
+
+        </div>
+
+        <div class="custom-submit">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+{% endblock %}

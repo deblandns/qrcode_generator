@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load sorl_thumbnail %}
+{% load static %}
+{% block static %}
+    <link rel="stylesheet" href="{% static "aboutusstyle.css" %}">
+{% endblock %}
+{% block title %}
+در باره ی ما
+{% endblock %}
+{% block content %}
+<section class="main-content">
+        <img src="{% static "myimage/ponisha image.jpg"%}" width="300" height="200" alt="">
+        <h2 class="section-title">معرفی</h2>
+        <p class="intro-paragraph">برنامه نوسی پایتون از اهواز هستم عاشق چالش ها و حل مشکلات و توسعه ی کد نویسی هستم و برای چالش های کد نویسی بیشتر تلاش میکنم تا بتونم برنامه هایی رو بسازم که جدا از پو
+        ل ساز بودن بتوانند مشکلات مردم را حل کنند</p>
+
+        <h2 class="section-title">سرگرمی هام</h2>
+        <ul class="hobbies-list">
+            <li>برنامه نویسی</li>
+            <li>بدنسازی</li>
+            <li>گیم زدن</li>
+            <li>قهوه و موسیقی</li>
+        </ul>
+
+        <h2 class="section-title">ارتباط با من</h2>
+        <p><a href="">روی لینک کلیک کنید برای</a> صفحه ای ارتباط با ما </p>
+        <p class="contact-info">میتوانید از طریق ایمیل با من در ارتباط باشید<a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkwznJdrkBKHQCjJqHwPHzNqFvdnKmdHDCsmqtzsPFkKfqTlLdMSJQpPntNVGfblmghqjs">hoseinnysyan1385@gmail.com</a></p>
+    </section>
+{% endblock %}
