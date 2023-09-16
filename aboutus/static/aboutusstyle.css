@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Apply styles to the page title */
+.page-title {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Apply styles to the main content section */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Apply styles to the profile picture */
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    width:388px;
+    height:518px;
+    border-radius: 388px;
+
+}
+
+/* Apply styles to section titles */
+.section-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Apply styles to the introduction paragraph */
+.intro-paragraph {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Apply styles to the hobbies list */
+.hobbies-list {
+    list-style-type: square;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+/* Apply styles to contact information */
+.contact-info {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Apply styles to the footer */
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}

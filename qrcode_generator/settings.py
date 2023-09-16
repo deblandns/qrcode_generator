@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'qrcode_maker.apps.QrcodeMakerConfig',
     'django_render_partial',
     'donate',
+    'aboutus',
     'sorl.thumbnail',
+
 
 
 ]

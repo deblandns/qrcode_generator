@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("qrcode_maker.urls")),
     path("donate/", include("donate.urls")),
+    path("about-us", include("aboutus.urls")),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
