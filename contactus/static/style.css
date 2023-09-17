@@ -35,3 +35,12 @@
     background-color: #0056b3;
 }
 
+.alert-success{
+    color: #ffffff;
+    background-color: #1b7118;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-left: 28%;
+    padding-right: 6%;
+    padding-left: -1%;
+}
