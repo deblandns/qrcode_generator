@@ -40,4 +40,9 @@
             <button type="submit">Submit</button>
         </div>
     </form>
+    <ul class="alert-success">
+    {% for message in messages %}
+    <li  {% if message.tags %} class="alert-success alert" {% endif %}> {{ message }} </li>
+    {% endfor %}
+</ul>
 {% endblock %}
