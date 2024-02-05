@@ -23,9 +23,13 @@ class qrcodes(models.Model):
         canvas = Image.new("RGB", (1000, 1000), "white")
         draw = ImageDraw.Draw(canvas)
         canvas.paste(qrcode_img)
-        file_name = f"qrcode{self.text_input}"+".png"
+        file_name = f'qrcode{self.text_input}"+".png'
         buffer = BytesIO()
-        canvas.save(buffer, "PNG")
+        if "http" in file_name:
+            changed_file_name = file_name("r" + f'{file_name}')
+            self.qrcode.save(changed_file_name, File(buffer), save=False)
+        buffer = BytesIO()
+        canvas.save(buffer, "png")
         self.qrcode.save(file_name, File(buffer), save=False)
         canvas.close()
         super().save(*args, **kwargs)
